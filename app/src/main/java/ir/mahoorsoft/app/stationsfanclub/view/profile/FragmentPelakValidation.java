@@ -16,6 +16,8 @@ import java.util.ArrayList;
 
 import ir.mahoorsoft.app.stationsfanclub.G;
 import ir.mahoorsoft.app.stationsfanclub.R;
+import ir.mahoorsoft.app.stationsfanclub.model.preferences.Pref;
+import ir.mahoorsoft.app.stationsfanclub.model.preferences.PrefKey;
 import ir.mahoorsoft.app.stationsfanclub.model.tables.Car;
 import ir.mahoorsoft.app.stationsfanclub.presenter.PresentCar;
 import ir.mahoorsoft.app.stationsfanclub.view.MainActivity;
@@ -32,6 +34,7 @@ public class FragmentPelakValidation extends Fragment implements View.OnClickLis
     TextView pelak4;
     RelativeLayout pbar;
     View view;
+    String pelak;
 
 
     @Nullable
@@ -86,6 +89,7 @@ public class FragmentPelakValidation extends Fragment implements View.OnClickLis
             pelak4.setError("لطفا صحیح وارد کنید");
             pelak4.requestFocus();
         } else {
+            pelak = s1 + "-" + s2 + "-" + s3 + "-" + s4;
             sendDataForServer(s1 + s2 + s3 + s4);
         }
     }
@@ -99,6 +103,12 @@ public class FragmentPelakValidation extends Fragment implements View.OnClickLis
     public void messageFromCar(String message) {
         pbar.setVisibility(View.GONE);
         Toast.makeText(G.context, message, Toast.LENGTH_SHORT).show();
+        savePelak();
+
+    }
+
+    private void savePelak() {
+        Pref.saveStringValue(PrefKey.pelak, pelak);
         ((MainActivity) (G.context)).replaceView(new FragmentGetCustomerData());
     }
 

@@ -1,8 +1,7 @@
-package ir.mahoorsoft.app.stationsfanclub.view.matboat.fragment_news;
+package ir.mahoorsoft.app.stationsfanclub.view.home;
 
 import android.content.Context;
 
-import android.support.v7.widget.LinearLayoutCompat;
 import android.support.v7.widget.RecyclerView;
 import android.util.DisplayMetrics;
 import android.view.LayoutInflater;

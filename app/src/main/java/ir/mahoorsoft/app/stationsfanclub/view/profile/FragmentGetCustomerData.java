@@ -21,6 +21,8 @@ import java.util.ArrayList;
 
 import ir.mahoorsoft.app.stationsfanclub.G;
 import ir.mahoorsoft.app.stationsfanclub.R;
+import ir.mahoorsoft.app.stationsfanclub.model.preferences.Pref;
+import ir.mahoorsoft.app.stationsfanclub.model.preferences.PrefKey;
 import ir.mahoorsoft.app.stationsfanclub.model.struct.StCustomer;
 import ir.mahoorsoft.app.stationsfanclub.model.tables.Car;
 import ir.mahoorsoft.app.stationsfanclub.presenter.PresentCar;
@@ -53,6 +55,7 @@ public class FragmentGetCustomerData extends Fragment implements View.OnClickLis
 
     private void init() {
         pointers();
+        txtPelak.setText(Pref.getStringValue(PrefKey.pelak, "error"));
         pbar = ((MainActivity) (G.context)).pBarMain;
     }
 
@@ -93,7 +96,7 @@ public class FragmentGetCustomerData extends Fragment implements View.OnClickLis
         } else if (txtPhone.getText().toString().trim().length() != 11 || !(TextUtils.isDigitsOnly(txtPhone.getText().toString().trim()))) {
             txtPhone.setError("لطفا صحیح وارد کنید");
             txtPhone.requestFocus();
-        }else{
+        } else {
             sendCarDataForServer();
         }
     }
@@ -196,7 +199,19 @@ public class FragmentGetCustomerData extends Fragment implements View.OnClickLis
     @Override
     public void messageFromCustomer(String message) {
         pbar.setVisibility(View.GONE);
+        saveCustomerData();
         Toast.makeText(G.context, message, Toast.LENGTH_SHORT).show();
+    }
+
+    private void saveCustomerData() {
+
+        Pref.saveStringValue(PrefKey.cName, txtName.getText().toString().trim());
+        Pref.saveStringValue(PrefKey.cFamily, txtFamily.getText().toString().trim());
+        Pref.saveStringValue(PrefKey.cPhone, txtPhone.getText().toString().trim());
+        Pref.saveStringValue(PrefKey.carType, txtCarType.getText().toString().trim());
+        Pref.saveStringValue(PrefKey.sokhtTyp, txtSokhtType.getText().toString().trim());
+        Pref.saveBollValue(PrefKey.isLogin, true);
+        ((MainActivity) (G.context)).replaceView(new FragmentProfile());
     }
 
     @Override

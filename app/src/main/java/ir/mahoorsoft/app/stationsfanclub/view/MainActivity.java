@@ -11,10 +11,13 @@ import android.widget.RelativeLayout;
 
 import ir.mahoorsoft.app.stationsfanclub.G;
 import ir.mahoorsoft.app.stationsfanclub.R;
-import ir.mahoorsoft.app.stationsfanclub.view.matboat.FragmentMatboat;
+import ir.mahoorsoft.app.stationsfanclub.model.preferences.Pref;
+import ir.mahoorsoft.app.stationsfanclub.model.preferences.PrefKey;
+import ir.mahoorsoft.app.stationsfanclub.view.home.FragmentHome;
 import ir.mahoorsoft.app.stationsfanclub.view.profile.FragmentGetCustomerData;
 import ir.mahoorsoft.app.stationsfanclub.view.profile.FragmentPelakValidation;
 import ir.mahoorsoft.app.stationsfanclub.view.profile.FragmentProfile;
+import ir.mahoorsoft.app.stationsfanclub.view.station.FragmentMap;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -36,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         setUpNavigationItemListener();
         G.disableShiftModeNavigation(navigationView);
+        replaceView(new FragmentHome());
     }
 
     private void pointers() {
@@ -50,21 +54,24 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()) {
+                    case R.id.menuHome:
+                        replaceView(new FragmentHome());
+                        getSupportActionBar().setTitle("خانه");
+                        return true;
+                    case R.id.menuMap:
+                        replaceView(new FragmentMap());
+                        getSupportActionBar().setTitle("نقشه جایگاها");
+                        return true;
+                    case R.id.menuLottery:
+                        replaceView(new FragmentLottery());
+                        getSupportActionBar().setTitle("قرعه کشی ها");
+                        return true;
                     case R.id.menuProfile:
-                        replaceView(new FragmentPelakValidation());
+                        if (Pref.getBollValue(PrefKey.isLogin, false))
+                            replaceView(new FragmentProfile());
+                        else
+                            replaceView(new FragmentPelakValidation());
                         getSupportActionBar().setTitle("پروفایل");
-                        return true;
-                    case R.id.menuProfile2:
-                        replaceView(new FragmentGetCustomerData());
-                        getSupportActionBar().setTitle("پروفایل2");
-                        return true;
-                    case R.id.menuProfile3:
-                        replaceView(new FragmentProfile());
-                        getSupportActionBar().setTitle("پروفایل3");
-                        return true;
-                    case R.id.menuMatboat:
-                        replaceView(new FragmentMatboat());
-                        getSupportActionBar().setTitle("مطبوعات");
                         return true;
                 }
                 return false;

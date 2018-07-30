@@ -28,11 +28,18 @@ public class Lottery {
     public void getLottery() {
 
         ArrayList<StLottery> stLotteries = new ArrayList<>();
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 5; i++) {
             StLottery stLottery = new StLottery();
             stLottery.lAward = "Award" + i;
             stLottery.lSubject = "subject" + i;
-            stLottery.lDate = "1377-04-" + i;
+            stLottery.lDate = "1397-05-0" + i;
+            stLotteries.add(stLottery);
+        }
+        for (int i = 0; i < 5; i++) {
+            StLottery stLottery = new StLottery();
+            stLottery.lAward = "Award" + i;
+            stLottery.lSubject = "subject" + i;
+            stLottery.lDate = "1397-05-1" + i;
             stLotteries.add(stLottery);
         }
 

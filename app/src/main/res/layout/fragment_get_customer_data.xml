@@ -268,17 +268,14 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="24dp">
 
-                <EditText
+                <TextView
 
                     android:id="@+id/txtPelakFragmrntGetCustomerData"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="9dp"
-                    android:layout_weight="1"
                     android:background="@drawable/input_text_border"
                     android:ems="10"
-                    android:hint="91485ب25"
-                    android:inputType="textPersonName"
                     android:padding="16dp"
                     android:textColor="@color/dark"
                     android:textColorHint="@color/light_three" />

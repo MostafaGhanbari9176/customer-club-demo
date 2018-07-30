@@ -17,6 +17,8 @@ import java.util.ArrayList;
 
 import ir.mahoorsoft.app.stationsfanclub.G;
 import ir.mahoorsoft.app.stationsfanclub.R;
+import ir.mahoorsoft.app.stationsfanclub.model.preferences.Pref;
+import ir.mahoorsoft.app.stationsfanclub.model.preferences.PrefKey;
 import ir.mahoorsoft.app.stationsfanclub.model.struct.StLottery;
 import ir.mahoorsoft.app.stationsfanclub.presenter.PresentLottery;
 import ir.mahoorsoft.app.stationsfanclub.view.MainActivity;
@@ -33,6 +35,12 @@ public class FragmentProfile extends Fragment implements View.OnClickListener, P
     LinearLayout LLCArFeature;
     ImageView imgCarFeature;
     TextView txtEmpty;
+    TextView txtName;
+    TextView txtFamily;
+    TextView txtPhone;
+    TextView txtSokhtType;
+    TextView txtCarType;
+    TextView txtPelak;
     RecyclerView list;
 
     @Nullable
@@ -45,8 +53,19 @@ public class FragmentProfile extends Fragment implements View.OnClickListener, P
 
     private void init() {
         pointers();
+        setData();
         pbar = ((MainActivity) (G.context)).pBarMain;
         getLotteryList();
+    }
+
+    private void setData(){
+
+        txtName.setText(Pref.getStringValue(PrefKey.cName,""));
+        txtFamily.setText(Pref.getStringValue(PrefKey.cFamily,""));
+        txtPhone.setText(Pref.getStringValue(PrefKey.cPhone,""));
+        txtSokhtType.setText(Pref.getStringValue(PrefKey.sokhtTyp,""));
+        txtCarType.setText(Pref.getStringValue(PrefKey.carType,""));
+        txtPelak.setText(Pref.getStringValue(PrefKey.pelak,""));
     }
 
     private void getLotteryList() {
@@ -58,6 +77,12 @@ public class FragmentProfile extends Fragment implements View.OnClickListener, P
 
         list = (RecyclerView) view.findViewById(R.id.RVLotteryFrafmentProfile);
         txtEmpty = (TextView) view.findViewById(R.id.txtEmptyLotteryFragmentProfile);
+        txtName = (TextView) view.findViewById(R.id.txtNameFragmentProfile);
+        txtFamily = (TextView) view.findViewById(R.id.txtFamilyFragmentProfile);
+        txtPhone = (TextView) view.findViewById(R.id.txtPhoneFragmentProfile);
+        txtCarType = (TextView) view.findViewById(R.id.txtCarTypeFragmentProfile);
+        txtSokhtType = (TextView) view.findViewById(R.id.txtSokhtTypeFragmentProfile);
+        txtPelak = (TextView) view.findViewById(R.id.txtPelakFragmentProfile);
         ((LinearLayout) view.findViewById(R.id.LLBtnShowCarFeature)).setOnClickListener(this);
         LLCArFeature = (LinearLayout) view.findViewById(R.id.LLCarFeature);
         imgCarFeature = (ImageView) view.findViewById(R.id.imgBtnShowCarFeature);
