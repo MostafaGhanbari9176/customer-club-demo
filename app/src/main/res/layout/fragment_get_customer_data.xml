@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_one"
+    android:layoutDirection="rtl"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="48dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="64dp"
+                android:gravity="center"
+                android:text="لطفا اطلاعات زیر را با دقت تکمیل کنید"
+                android:textColor="@color/light_three"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:gravity="center"
+                    android:text="اطلاعات شخصی"
+                    android:textColor="@color/light_three" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="8dp"
+                    android:background="@color/light_three"
+                    android:orientation="vertical"></LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight="1">
+
+                    <EditText
+
+                        android:id="@+id/txtNameFragmrntGetCustomerData"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="9dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/input_text_border"
+                        android:ems="10"
+                        android:hint="مصطفی"
+                        android:inputType="textPersonName"
+                        android:padding="16dp"
+                        android:textColor="@color/dark"
+                        android:textColorHint="@color/light_three" />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:background="@color/light_one"
+                        android:paddingEnd="4dp"
+                        android:paddingStart="4dp"
+                        android:text="نام"
+                        android:textColor="@color/secondaryColor"
+                        android:textSize="@dimen/txt_small_size" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight="1">
+
+                    <EditText
+
+                        android:id="@+id/txtFamilyFragmrntGetCustomerData"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="9dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/input_text_border"
+                        android:ems="10"
+                        android:hint="قنبری"
+                        android:inputType="textPersonName"
+                        android:padding="16dp"
+                        android:textColor="@color/dark"
+                        android:textColorHint="@color/light_three" />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:background="@color/light_one"
+                        android:paddingEnd="4dp"
+                        android:paddingStart="4dp"
+                        android:text="نام خانوادگی"
+                        android:textColor="@color/secondaryColor"
+                        android:textSize="@dimen/txt_small_size" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp">
+
+                <EditText
+
+                    android:id="@+id/txtPhoneFragmrntGetCustomerData"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="9dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/input_text_border"
+                    android:ems="10"
+                    android:hint="09157474087"
+                    android:inputType="phone"
+                    android:maxLength="11"
+                    android:padding="16dp"
+                    android:textColor="@color/dark"
+                    android:textColorHint="@color/light_three" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:background="@color/light_one"
+                    android:maxLines="1"
+                    android:paddingEnd="4dp"
+                    android:paddingStart="4dp"
+                    android:text="شماره همراه"
+                    android:textColor="@color/secondaryColor"
+                    android:textSize="@dimen/txt_small_size" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="32dp"
+                android:layout_marginTop="48dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:gravity="center"
+                    android:text="اطلاعات خودرو"
+                    android:textColor="@color/light_three" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="8dp"
+                    android:background="@color/light_three"
+                    android:orientation="vertical"></LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/btnCarTypeFragmrntGetCustomerData"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_defult"
+                        android:padding="16dp"
+                        android:text="نوع خودرو"
+                        android:textColor="@color/light_one" />
+
+                    <TextView
+                        android:id="@+id/txtCarTypeFragmrntGetCustomerData"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="سبک"
+                        android:textColor="@color/light_three"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/btnSokhtTypeFragmrntGetCustomerData"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_defult"
+                        android:padding="16dp"
+                        android:text="نوع سوخت"
+                        android:textColor="@color/light_one" />
+
+                    <TextView
+                        android:id="@+id/txtSokhtTypeFragmrntGetCustomerData"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="بنزین"
+                        android:textColor="@color/light_three"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="64dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp">
+
+                <EditText
+
+                    android:id="@+id/txtPelakFragmrntGetCustomerData"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="9dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/input_text_border"
+                    android:ems="10"
+                    android:hint="91485ب25"
+                    android:inputType="textPersonName"
+                    android:padding="16dp"
+                    android:textColor="@color/dark"
+                    android:textColorHint="@color/light_three" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:background="@color/light_one"
+                    android:maxLines="1"
+                    android:paddingEnd="4dp"
+                    android:paddingStart="4dp"
+                    android:text="شماره پلاک"
+                    android:textColor="@color/secondaryColor"
+                    android:textSize="@dimen/txt_small_size" />
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btnSaveCustomerData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="32dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:background="@drawable/btn_defult"
+                android:padding="16dp"
+                android:text="ذخیره اطلاعات"
+                android:textColor="@color/light_one" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_one"
+    android:layoutDirection="rtl"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="64dp"
+                android:gravity="center"
+                android:text="برای تکمیل حساب کاربری و مشاهده امتیازات شما باید حداقل از یکی از پمپ بنزین های تحت پوشش سرویس خرید داشته باشید"
+                android:textColor="@color/light_three" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="80dp"
+                android:text="شماره پلاک خودرا در زیر وارد کنید :"
+                android:textColor="@color/secondaryColor" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <EditText
+
+                        android:id="@+id/txtPelak4PelakValidation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="9dp"
+                        android:background="@drawable/input_text_border"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:hint="85"
+                        android:inputType="numberDecimal"
+                        android:maxLength="2"
+                        android:padding="16dp"
+                        android:textColor="@color/dark"
+                        android:textColorHint="@color/light_three" />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:background="@color/light_one"
+                        android:maxLines="1"
+                        android:paddingEnd="4dp"
+                        android:paddingStart="4dp"
+                        android:text="کدناحیه"
+                        android:textColor="@color/secondaryColor"
+                        android:textSize="@dimen/txt_small_size" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="1">
+
+                    <EditText
+
+                        android:id="@+id/txtPelak3PelakValidation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="9dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/input_text_border"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:hint="693"
+                        android:inputType="numberDecimal"
+                        android:maxLength="3"
+                        android:padding="16dp"
+                        android:textColor="@color/dark"
+                        android:textColorHint="@color/light_three" />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:background="@color/light_one"
+                        android:maxLines="1"
+                        android:paddingEnd="4dp"
+                        android:paddingStart="4dp"
+                        android:text="سه رقم آخر"
+                        android:textColor="@color/secondaryColor"
+                        android:textSize="@dimen/txt_small_size" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="1">
+
+                    <EditText
+
+                        android:id="@+id/txtPelak2PelakValidation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="9dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/input_text_border"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:hint="الف"
+                        android:inputType="textPersonName"
+                        android:maxLength="1"
+                        android:padding="16dp"
+                        android:textColor="@color/dark"
+                        android:textColorHint="@color/light_three" />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:background="@color/light_one"
+                        android:maxLines="1"
+                        android:paddingEnd="4dp"
+                        android:paddingStart="4dp"
+                        android:text="الفبا"
+                        android:textColor="@color/secondaryColor"
+                        android:textSize="@dimen/txt_small_size" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="1">
+
+                    <EditText
+
+                        android:id="@+id/txtPelak1PelakValidation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="9dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/input_text_border"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:hint="22"
+                        android:inputType="numberDecimal"
+                        android:maxLength="2"
+                        android:padding="16dp"
+                        android:textColor="@color/dark"
+                        android:textColorHint="@color/light_three" />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:background="@color/light_one"
+                        android:maxLines="1"
+                        android:paddingEnd="4dp"
+                        android:paddingStart="4dp"
+                        android:text="دورقم اول"
+                        android:textColor="@color/secondaryColor"
+                        android:textSize="@dimen/txt_small_size" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnConfirmPelak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="60dp"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/btn_defult"
+                android:padding="16dp"
+                android:text="بررسی"
+                android:textColor="@color/secondaryTextColor" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
