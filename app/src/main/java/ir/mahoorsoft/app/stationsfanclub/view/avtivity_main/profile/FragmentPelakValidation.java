@@ -1,4 +1,4 @@
-package ir.mahoorsoft.app.stationsfanclub.view.profile;
+package ir.mahoorsoft.app.stationsfanclub.view.avtivity_main.profile;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -20,7 +20,7 @@ import ir.mahoorsoft.app.stationsfanclub.model.preferences.Pref;
 import ir.mahoorsoft.app.stationsfanclub.model.preferences.PrefKey;
 import ir.mahoorsoft.app.stationsfanclub.model.tables.Car;
 import ir.mahoorsoft.app.stationsfanclub.presenter.PresentCar;
-import ir.mahoorsoft.app.stationsfanclub.view.MainActivity;
+import ir.mahoorsoft.app.stationsfanclub.view.avtivity_main.MainActivity;
 
 /**
  * Created by RCC1 on 7/28/2018.

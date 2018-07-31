@@ -1,4 +1,4 @@
-package ir.mahoorsoft.app.stationsfanclub.view.station;
+package ir.mahoorsoft.app.stationsfanclub.view.avtivity_main;
 
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -25,8 +25,7 @@ import com.google.android.gms.maps.model.MarkerOptions;
 
 import ir.mahoorsoft.app.stationsfanclub.G;
 import ir.mahoorsoft.app.stationsfanclub.R;
-import ir.mahoorsoft.app.stationsfanclub.model.preferences.Pref;
-import ir.mahoorsoft.app.stationsfanclub.model.preferences.PrefKey;
+import ir.mahoorsoft.app.stationsfanclub.view.activity_station_feature.StationFeatureActivity;
 
 
 /**
@@ -93,10 +92,10 @@ public class FragmentMap extends Fragment implements OnMapReadyCallback, GoogleM
     }
 
     private void setMarkers() {
-       // for (int i = 0; i < source.size(); i++) {
-            LatLng location = new LatLng(29.4892550, 60.8612360);
-            addMarker(location,"ok");
-       // }
+        // for (int i = 0; i < source.size(); i++) {
+        LatLng location = new LatLng(29.4892550, 60.8612360);
+        addMarker(location, "ok");
+        // }
 
     }
 
@@ -123,7 +122,8 @@ public class FragmentMap extends Fragment implements OnMapReadyCallback, GoogleM
     public boolean onMarkerClick(Marker marker) {
 
         Toast.makeText(G.context, marker.getSnippet(), Toast.LENGTH_SHORT).show();
-
+        Intent intent = new Intent(G.context, StationFeatureActivity.class);
+        startActivity(intent);
         return true;
     }
 

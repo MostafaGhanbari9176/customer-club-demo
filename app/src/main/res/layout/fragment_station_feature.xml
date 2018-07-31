@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layoutDirection="rtl"
+        app:layout_behavior="android.support.design.widget.AppBarLayout$ScrollingViewBehavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/txtSationIdFragmentFeature"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/output_text_border"
+                        android:ems="10"
+                        android:enabled="false"
+                        android:hint="شعبه بعثت"
+                        android:inputType="textMultiLine"
+                        android:paddingBottom="12dp"
+                        android:paddingStart="16dp"
+                        android:paddingTop="26dp"
+                        android:textColor="@color/dark"
+                        android:textColorHint="@color/light_three" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_alignBottom="@+id/txtSationIdFragmentFeature"
+                        android:layout_alignParentBottom="false"
+                        android:background="@color/secondaryColor"
+                        android:orientation="horizontal"></LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:text="نام جایگاه"
+                        android:textColor="@color/secondaryColor"
+                        android:textSize="@dimen/txt_small_size" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/txtStationNameFragmentFeature"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/output_text_border"
+                        android:ems="10"
+                        android:enabled="false"
+                        android:inputType="textMultiLine"
+                        android:paddingBottom="12dp"
+                        android:paddingStart="16dp"
+                        android:paddingTop="26dp"
+                        android:textColor="@color/dark"
+                        android:textColorHint="@color/light_three" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_alignBottom="@+id/txtStationNameFragmentFeature"
+                        android:layout_alignParentBottom="false"
+                        android:background="@color/secondaryColor"
+                        android:orientation="horizontal"></LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:text="کد جایگاه"
+                        android:textColor="@color/secondaryColor"
+                        android:textSize="@dimen/txt_small_size" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="16dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/txtManagerNameFragmentFeature"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/output_text_border"
+                        android:ems="10"
+                        android:enabled="false"
+                        android:hint="پلاک"
+                        android:inputType="textMultiLine"
+                        android:paddingBottom="12dp"
+                        android:paddingStart="16dp"
+                        android:paddingTop="26dp"
+                        android:textColor="@color/dark"
+                        android:textColorHint="@color/light_three" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_alignBottom="@+id/txtManagerNameFragmentFeature"
+                        android:layout_alignParentBottom="false"
+                        android:background="@color/secondaryColor"
+                        android:orientation="horizontal"></LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:text="نام مدیر"
+                        android:textColor="@color/secondaryColor"
+                        android:textSize="@dimen/txt_small_size" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/txtPhoneFragmentStation"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/output_text_border"
+                        android:ems="10"
+                        android:enabled="false"
+                        android:hint="پلاک"
+                        android:inputType="textMultiLine"
+                        android:paddingBottom="12dp"
+                        android:paddingStart="16dp"
+                        android:paddingTop="26dp"
+                        android:textColor="@color/dark"
+                        android:textColorHint="@color/light_three" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_alignBottom="@+id/txtPhoneFragmentStation"
+                        android:layout_alignParentBottom="false"
+                        android:background="@color/secondaryColor"
+                        android:orientation="horizontal"></LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:text="شماره تماس"
+                        android:textColor="@color/secondaryColor"
+                        android:textSize="@dimen/txt_small_size" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="16dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/txtCityFragmentFeature"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/output_text_border"
+                        android:ems="10"
+                        android:enabled="false"
+                        android:hint="پلاک"
+                        android:inputType="textMultiLine"
+                        android:paddingBottom="12dp"
+                        android:paddingStart="16dp"
+                        android:paddingTop="26dp"
+                        android:textColor="@color/dark"
+                        android:textColorHint="@color/light_three" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_alignBottom="@+id/txtCityFragmentFeature"
+                        android:layout_alignParentBottom="false"
+                        android:background="@color/secondaryColor"
+                        android:orientation="horizontal"></LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:text="شهرستان"
+                        android:textColor="@color/secondaryColor"
+                        android:textSize="@dimen/txt_small_size" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/txtOstanFragmentFeature"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/output_text_border"
+                        android:ems="10"
+                        android:enabled="false"
+                        android:hint="پلاک"
+                        android:inputType="textMultiLine"
+                        android:paddingBottom="12dp"
+                        android:paddingStart="16dp"
+                        android:paddingTop="26dp"
+                        android:textColor="@color/dark"
+                        android:textColorHint="@color/light_three" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_alignBottom="@+id/txtOstanFragmentFeature"
+                        android:layout_alignParentBottom="false"
+                        android:background="@color/secondaryColor"
+                        android:orientation="horizontal"></LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:text="استان"
+                        android:textColor="@color/secondaryColor"
+                        android:textSize="@dimen/txt_small_size" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp">
+
+                <EditText
+                    android:id="@+id/txtAddressFragmentFeature"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/output_text_border"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:hint="پلاک"
+                    android:inputType="textMultiLine"
+                    android:paddingBottom="12dp"
+                    android:paddingStart="16dp"
+                    android:paddingTop="26dp"
+                    android:textColor="@color/dark"
+                    android:textColorHint="@color/light_three" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_alignBottom="@+id/txtAddressFragmentFeature"
+                    android:layout_alignParentBottom="false"
+                    android:background="@color/secondaryColor"
+                    android:orientation="horizontal"></LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:text="آدرس جایگاه"
+                    android:textColor="@color/secondaryColor"
+                    android:textSize="@dimen/txt_small_size" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp">
+
+                <EditText
+                    android:id="@+id/txtDiscriptionFragmentFeature"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/output_text_border"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:hint="پلاک"
+                    android:inputType="textMultiLine"
+                    android:paddingBottom="12dp"
+                    android:paddingStart="16dp"
+                    android:paddingTop="26dp"
+                    android:textColor="@color/dark"
+                    android:textColorHint="@color/light_three" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_alignBottom="@+id/txtDiscriptionFragmentFeature"
+                    android:layout_alignParentBottom="false"
+                    android:background="@color/secondaryColor"
+                    android:orientation="horizontal"></LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:text="توضیحات"
+                    android:textColor="@color/secondaryColor"
+                    android:textSize="@dimen/txt_small_size" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

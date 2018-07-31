@@ -1,4 +1,4 @@
-package ir.mahoorsoft.app.stationsfanclub.view.home;
+package ir.mahoorsoft.app.stationsfanclub.view.avtivity_main.home;
 
 import android.content.Context;
 

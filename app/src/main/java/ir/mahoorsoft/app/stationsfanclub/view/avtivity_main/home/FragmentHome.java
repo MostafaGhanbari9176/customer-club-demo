@@ -1,10 +1,9 @@
-package ir.mahoorsoft.app.stationsfanclub.view.home;
+package ir.mahoorsoft.app.stationsfanclub.view.avtivity_main.home;
 
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.support.v4.view.ViewPager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.DisplayMetrics;
@@ -21,12 +20,8 @@ import cn.lightsky.infiniteindicator.OnPageClickListener;
 import cn.lightsky.infiniteindicator.Page;
 import ir.mahoorsoft.app.stationsfanclub.G;
 import ir.mahoorsoft.app.stationsfanclub.R;
-import ir.mahoorsoft.app.stationsfanclub.model.api.ApiClient;
-import ir.mahoorsoft.app.stationsfanclub.model.struct.RFServer;
 import ir.mahoorsoft.app.stationsfanclub.model.struct.StNews;
 import ir.mahoorsoft.app.stationsfanclub.model.struct.StTablighat;
-import ir.mahoorsoft.app.stationsfanclub.model.tables.News;
-import ir.mahoorsoft.app.stationsfanclub.model.tables.Tablighat;
 import ir.mahoorsoft.app.stationsfanclub.presenter.PresentNews;
 import ir.mahoorsoft.app.stationsfanclub.presenter.PresentTablighat;
 import ir.mahoorsoft.app.stationsfanclub.view.GlideLoader;

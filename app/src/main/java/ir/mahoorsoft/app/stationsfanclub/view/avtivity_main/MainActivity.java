@@ -1,4 +1,4 @@
-package ir.mahoorsoft.app.stationsfanclub.view;
+package ir.mahoorsoft.app.stationsfanclub.view.avtivity_main;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -13,11 +13,9 @@ import ir.mahoorsoft.app.stationsfanclub.G;
 import ir.mahoorsoft.app.stationsfanclub.R;
 import ir.mahoorsoft.app.stationsfanclub.model.preferences.Pref;
 import ir.mahoorsoft.app.stationsfanclub.model.preferences.PrefKey;
-import ir.mahoorsoft.app.stationsfanclub.view.home.FragmentHome;
-import ir.mahoorsoft.app.stationsfanclub.view.profile.FragmentGetCustomerData;
-import ir.mahoorsoft.app.stationsfanclub.view.profile.FragmentPelakValidation;
-import ir.mahoorsoft.app.stationsfanclub.view.profile.FragmentProfile;
-import ir.mahoorsoft.app.stationsfanclub.view.station.FragmentMap;
+import ir.mahoorsoft.app.stationsfanclub.view.avtivity_main.home.FragmentHome;
+import ir.mahoorsoft.app.stationsfanclub.view.avtivity_main.profile.FragmentPelakValidation;
+import ir.mahoorsoft.app.stationsfanclub.view.avtivity_main.profile.FragmentProfile;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -56,14 +54,16 @@ public class MainActivity extends AppCompatActivity {
                 switch (item.getItemId()) {
                     case R.id.menuHome:
                         replaceView(new FragmentHome());
+                        getSupportActionBar().show();
                         getSupportActionBar().setTitle("خانه");
                         return true;
                     case R.id.menuMap:
                         replaceView(new FragmentMap());
-                        getSupportActionBar().setTitle("نقشه جایگاها");
+                        getSupportActionBar().hide();
                         return true;
                     case R.id.menuLottery:
                         replaceView(new FragmentLottery());
+                        getSupportActionBar().show();
                         getSupportActionBar().setTitle("قرعه کشی ها");
                         return true;
                     case R.id.menuProfile:
@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
                             replaceView(new FragmentProfile());
                         else
                             replaceView(new FragmentPelakValidation());
-                        getSupportActionBar().setTitle("پروفایل");
+                        getSupportActionBar().hide();
                         return true;
                 }
                 return false;

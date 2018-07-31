@@ -1,15 +1,13 @@
-package ir.mahoorsoft.app.stationsfanclub.view;
+package ir.mahoorsoft.app.stationsfanclub.view.avtivity_main;
 
 
 import android.content.DialogInterface;
 import android.os.Bundle;
-import android.preference.DialogPreference;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.DisplayMetrics;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,21 +15,12 @@ import android.widget.LinearLayout;
 
 import java.util.ArrayList;
 
-import cn.lightsky.infiniteindicator.IndicatorConfiguration;
-import cn.lightsky.infiniteindicator.InfiniteIndicator;
-import cn.lightsky.infiniteindicator.OnPageClickListener;
-import cn.lightsky.infiniteindicator.Page;
 import ir.mahoorsoft.app.stationsfanclub.G;
 import ir.mahoorsoft.app.stationsfanclub.R;
 import ir.mahoorsoft.app.stationsfanclub.model.struct.StLottery;
-import ir.mahoorsoft.app.stationsfanclub.model.struct.StNews;
-import ir.mahoorsoft.app.stationsfanclub.model.struct.StTablighat;
 import ir.mahoorsoft.app.stationsfanclub.presenter.PresentLottery;
-import ir.mahoorsoft.app.stationsfanclub.presenter.PresentNews;
-import ir.mahoorsoft.app.stationsfanclub.presenter.PresentTablighat;
 import ir.mahoorsoft.app.stationsfanclub.view.adapters.AdapterLotteryList;
 import ir.mahoorsoft.app.stationsfanclub.view.date.DateCreator;
-import ir.mahoorsoft.app.stationsfanclub.view.home.AdapterNewsList;
 
 
 /**
