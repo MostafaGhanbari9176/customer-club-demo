@@ -21,7 +21,7 @@ import ir.mahoorsoft.app.stationsfanclub.model.preferences.Pref;
 import ir.mahoorsoft.app.stationsfanclub.model.preferences.PrefKey;
 import ir.mahoorsoft.app.stationsfanclub.model.struct.StLottery;
 import ir.mahoorsoft.app.stationsfanclub.presenter.PresentLottery;
-import ir.mahoorsoft.app.stationsfanclub.view.avtivity_main.MainActivity;
+import ir.mahoorsoft.app.stationsfanclub.view.avtivity_main.ActivityMain;
 import ir.mahoorsoft.app.stationsfanclub.view.adapters.AdapterLotteryList;
 
 /**
@@ -54,7 +54,7 @@ public class FragmentProfile extends Fragment implements View.OnClickListener, P
     private void init() {
         pointers();
         setData();
-        pbar = ((MainActivity) (G.context)).pBarMain;
+        pbar = ((ActivityMain) (G.context)).pBarMain;
         getLotteryList();
     }
 

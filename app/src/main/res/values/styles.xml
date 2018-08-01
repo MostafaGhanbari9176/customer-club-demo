@@ -7,6 +7,9 @@
         <item name="colorPrimaryDark">@color/primaryDarkColor</item>
         <item name="colorAccent">@color/secondaryColor</item>
         <item name="android:textSize">@dimen/txt_normal_size</item>
+        <item name="android:textColorLink">@color/secondaryLightColor</item>
+        <item name="android:textColorHint">@color/secondaryLightColor</item>
+
 
     </style>
 

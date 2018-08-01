@@ -20,7 +20,7 @@ import ir.mahoorsoft.app.stationsfanclub.model.preferences.Pref;
 import ir.mahoorsoft.app.stationsfanclub.model.preferences.PrefKey;
 import ir.mahoorsoft.app.stationsfanclub.model.tables.Car;
 import ir.mahoorsoft.app.stationsfanclub.presenter.PresentCar;
-import ir.mahoorsoft.app.stationsfanclub.view.avtivity_main.MainActivity;
+import ir.mahoorsoft.app.stationsfanclub.view.avtivity_main.ActivityMain;
 
 /**
  * Created by RCC1 on 7/28/2018.
@@ -47,7 +47,7 @@ public class FragmentPelakValidation extends Fragment implements View.OnClickLis
 
     private void init() {
         pointers();
-        pbar = ((MainActivity) (G.context)).pBarMain;
+        pbar = ((ActivityMain) (G.context)).pBarMain;
     }
 
     private void pointers() {
@@ -109,7 +109,7 @@ public class FragmentPelakValidation extends Fragment implements View.OnClickLis
 
     private void savePelak() {
         Pref.saveStringValue(PrefKey.pelak, pelak);
-        ((MainActivity) (G.context)).replaceView(new FragmentGetCustomerData());
+        ((ActivityMain) (G.context)).replaceView(new FragmentGetCustomerData());
     }
 
     @Override

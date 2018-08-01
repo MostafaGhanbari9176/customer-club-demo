@@ -57,7 +57,8 @@ public class AdapterLotteryList extends RecyclerView.Adapter<AdapterLotteryList.
         holder.item.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                onLotteryItemClickListener.itemLotteryClicked(position);
+                if (onLotteryItemClickListener != null)
+                    onLotteryItemClickListener.itemLotteryClicked(position);
             }
         });
         lastPosition = G.setListItemsAnimation(new View[]{holder.item}, null, position, lastPosition);

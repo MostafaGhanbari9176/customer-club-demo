@@ -27,7 +27,7 @@ import ir.mahoorsoft.app.stationsfanclub.model.struct.StCustomer;
 import ir.mahoorsoft.app.stationsfanclub.model.tables.Car;
 import ir.mahoorsoft.app.stationsfanclub.presenter.PresentCar;
 import ir.mahoorsoft.app.stationsfanclub.presenter.PresentCustomer;
-import ir.mahoorsoft.app.stationsfanclub.view.avtivity_main.MainActivity;
+import ir.mahoorsoft.app.stationsfanclub.view.avtivity_main.ActivityMain;
 
 /**
  * Created by RCC1 on 7/28/2018.
@@ -56,7 +56,7 @@ public class FragmentGetCustomerData extends Fragment implements View.OnClickLis
     private void init() {
         pointers();
         txtPelak.setText(Pref.getStringValue(PrefKey.pelak, "error"));
-        pbar = ((MainActivity) (G.context)).pBarMain;
+        pbar = ((ActivityMain) (G.context)).pBarMain;
     }
 
     private void pointers() {
@@ -211,7 +211,7 @@ public class FragmentGetCustomerData extends Fragment implements View.OnClickLis
         Pref.saveStringValue(PrefKey.carType, txtCarType.getText().toString().trim());
         Pref.saveStringValue(PrefKey.sokhtTyp, txtSokhtType.getText().toString().trim());
         Pref.saveBollValue(PrefKey.isLogin, true);
-        ((MainActivity) (G.context)).replaceView(new FragmentProfile());
+        ((ActivityMain) (G.context)).replaceView(new FragmentProfile());
     }
 
     @Override

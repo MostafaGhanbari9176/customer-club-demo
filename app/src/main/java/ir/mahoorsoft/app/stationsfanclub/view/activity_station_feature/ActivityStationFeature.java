@@ -13,7 +13,7 @@ import ir.mahoorsoft.app.stationsfanclub.view.activity_station_feature.fragment_
 import ir.mahoorsoft.app.stationsfanclub.view.adapters.AdapterViewPager;
 
 
-public class StationFeatureActivity extends AppCompatActivity {
+public class ActivityStationFeature extends AppCompatActivity {
 
     Toolbar toolbar;
     ViewPager viewPager;

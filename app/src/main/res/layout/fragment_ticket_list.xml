@@ -4,25 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/light_two"
+    android:background="@color/light_one"
     android:layoutDirection="rtl">
 
-    <RatingBar
-        android:id="@+id/ratingBar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="16dp"
-        android:numStars="5" />
-
     <android.support.v7.widget.RecyclerView
-        android:id="@+id/RVFragmentComment"
+        android:id="@+id/RVTicketList"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="80dp" />
+        android:layout_height="wrap_content" />
 
     <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fabFragmentComment"
+        android:id="@+id/fabFragmentTicketList"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"

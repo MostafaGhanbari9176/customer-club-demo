@@ -25,7 +25,7 @@ import com.google.android.gms.maps.model.MarkerOptions;
 
 import ir.mahoorsoft.app.stationsfanclub.G;
 import ir.mahoorsoft.app.stationsfanclub.R;
-import ir.mahoorsoft.app.stationsfanclub.view.activity_station_feature.StationFeatureActivity;
+import ir.mahoorsoft.app.stationsfanclub.view.activity_station_feature.ActivityStationFeature;
 
 
 /**
@@ -122,7 +122,7 @@ public class FragmentMap extends Fragment implements OnMapReadyCallback, GoogleM
     public boolean onMarkerClick(Marker marker) {
 
         Toast.makeText(G.context, marker.getSnippet(), Toast.LENGTH_SHORT).show();
-        Intent intent = new Intent(G.context, StationFeatureActivity.class);
+        Intent intent = new Intent(G.context, ActivityStationFeature.class);
         startActivity(intent);
         return true;
     }
