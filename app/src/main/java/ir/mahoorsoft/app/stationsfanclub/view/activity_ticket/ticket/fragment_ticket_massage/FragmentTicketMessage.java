@@ -100,6 +100,7 @@ public class FragmentTicketMessage extends Fragment implements Message.OnMessage
         list.setAdapter(adapterTicketMessage);
         list.setItemAnimator(new DefaultItemAnimator());
         adapterTicketMessage.notifyDataSetChanged();
+        list.scrollToPosition(source.size()-1);
     }
 
     @Override

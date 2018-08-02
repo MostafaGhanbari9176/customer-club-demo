@@ -27,13 +27,21 @@ import ir.mahoorsoft.app.stationsfanclub.model.struct.StNews;
 
 public class AdapterComment extends RecyclerView.Adapter<AdapterComment.Holder> {
 
+    interface OnCommentItemClickListener {
+        public void commentItemClicked(int position);
+    }
+
+    private OnCommentItemClickListener onCommentItemClickListener;
+
     private Context context;
     private ArrayList<StComment> source = new ArrayList<>();
     private int lastPosition;
 
-    public AdapterComment(Context context, ArrayList<StComment> source) {
+
+    public AdapterComment(Context context, ArrayList<StComment> source, OnCommentItemClickListener onCommentItemClickListener) {
         this.context = context;
         this.source = source;
+        this.onCommentItemClickListener = onCommentItemClickListener;
     }
 
     @Override
@@ -43,13 +51,19 @@ public class AdapterComment extends RecyclerView.Adapter<AdapterComment.Holder> 
     }
 
     @Override
-    public void onBindViewHolder(Holder holder, int position) {
+    public void onBindViewHolder(final Holder holder, final int position) {
         StComment stLottery = source.get(position);
         holder.txtComment.setText(stLottery.comText);
         holder.txtDate.setText(stLottery.comDate);
         holder.txtName.setText(stLottery.cuName);
         holder.ratingBar.setRating(stLottery.rat);
-
+        holder.txtReport.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onCommentItemClickListener.commentItemClicked(position);
+                G.setListItemsAnimation(new View[]{holder.txtReport}, null, 1, 0);
+            }
+        });
         lastPosition = G.setListItemsAnimation(new View[]{holder.cardView}, null, position, lastPosition);
     }
 

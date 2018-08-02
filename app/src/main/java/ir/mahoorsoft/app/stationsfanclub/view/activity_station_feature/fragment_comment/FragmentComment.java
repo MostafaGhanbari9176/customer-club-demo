@@ -8,7 +8,9 @@ import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -21,6 +23,7 @@ import android.view.animation.TranslateAnimation;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.RatingBar;
+import android.widget.SeekBar;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -28,18 +31,14 @@ import java.util.ArrayList;
 import ir.mahoorsoft.app.stationsfanclub.G;
 import ir.mahoorsoft.app.stationsfanclub.R;
 import ir.mahoorsoft.app.stationsfanclub.model.struct.StComment;
-import ir.mahoorsoft.app.stationsfanclub.model.struct.StLottery;
 import ir.mahoorsoft.app.stationsfanclub.presenter.PresentComment;
-import ir.mahoorsoft.app.stationsfanclub.presenter.PresentLottery;
-import ir.mahoorsoft.app.stationsfanclub.view.adapters.AdapterLotteryList;
-import ir.mahoorsoft.app.stationsfanclub.view.date.DateCreator;
 
 
 /**
  * Created by RCC1 on 4/28/2018.
  */
 
-public class FragmentComment extends Fragment implements PresentComment.OnPresentCommentResponseListener {
+public class FragmentComment extends Fragment implements PresentComment.OnPresentCommentResponseListener, AdapterComment.OnCommentItemClickListener {
     FloatingActionButton fab;
     View view;
     RecyclerView list;
@@ -157,10 +156,39 @@ public class FragmentComment extends Fragment implements PresentComment.OnPresen
     public void dataFromComment(ArrayList<StComment> stComments) {
         source.clear();
         source.addAll(stComments);
-        AdapterComment adapterLotteryList = new AdapterComment(G.context, stComments);
+        AdapterComment adapterLotteryList = new AdapterComment(G.context, stComments, this);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(G.context, LinearLayout.VERTICAL, false);
         list.setLayoutManager(layoutManager);
         list.setAdapter(adapterLotteryList);
         adapterLotteryList.notifyDataSetChanged();
+    }
+
+    @Override
+    public void commentItemClicked(int position) {
+        reportComment();
+    }
+
+    private void reportComment() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(G.context);
+        builder.setTitle("گزارش این نظر");
+        builder.setNegativeButton("خیر", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.cancel();
+            }
+        });
+
+        builder.setPositiveButton("بله", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                Snackbar snackbar = Snackbar.make(view, "ازبازخورد شما متشکریم", 1000);
+                View sbView = snackbar.getView();
+                TextView textView = (TextView) sbView.findViewById(android.support.design.R.id.snackbar_text);
+                textView.setTextColor(ContextCompat.getColor(G.context, R.color.primaryLightColor));
+                snackbar.show();
+            }
+        });
+
+        builder.show();
     }
 }

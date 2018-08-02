@@ -107,7 +107,7 @@ public class FragmentMap extends Fragment implements OnMapReadyCallback, GoogleM
                 .position(location)
                 .title("Melbourne")
                 .snippet("Population: 4,137,400")
-                .icon(BitmapDescriptorFactory.fromBitmap(G.getBitmapFromVectorDrawable(G.context, R.drawable.icon_gas_station))));
+                .icon(BitmapDescriptorFactory.fromBitmap(G.getBitmapFromVectorDrawable(G.context, R.drawable.icon_gas_station_dark))));
 //        m.showInfoWindow();
     }
 

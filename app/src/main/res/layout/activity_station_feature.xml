@@ -15,7 +15,17 @@
         <android.support.v7.widget.Toolbar
             android:id="@+id/tlbStationFeature"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content" >
+            <TextView
+                android:id="@+id/txtActionBarStation"
+                android:layout_marginEnd="20dp"
+                android:text="test"
+                android:textColor="@color/light_one"
+                android:gravity="center"
+                android:textSize="@dimen/txt_big_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </android.support.v7.widget.Toolbar>
 
         <android.support.design.widget.TabLayout
             android:id="@+id/tabLayoutStationFeature"

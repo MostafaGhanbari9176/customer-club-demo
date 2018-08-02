@@ -35,35 +35,35 @@
                         android:layout_height="0dp"
                         android:layout_weight="1"
                         android:rotation="40"
-                        app:srcCompat="@drawable/icon_gas_station" />
+                        app:srcCompat="@drawable/icon_gas_station_dark" />
 
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1"
                         android:rotation="40"
-                        app:srcCompat="@drawable/icon_gas_station" />
+                        app:srcCompat="@drawable/icon_gas_station_dark" />
 
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1"
                         android:rotation="40"
-                        app:srcCompat="@drawable/icon_gas_station" />
+                        app:srcCompat="@drawable/icon_gas_station_dark" />
 
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1"
                         android:rotation="40"
-                        app:srcCompat="@drawable/icon_gas_station" />
+                        app:srcCompat="@drawable/icon_gas_station_dark" />
 
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1"
                         android:rotation="40"
-                        app:srcCompat="@drawable/icon_gas_station" />
+                        app:srcCompat="@drawable/icon_gas_station_dark" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -77,35 +77,35 @@
                         android:layout_height="0dp"
                         android:layout_weight="1"
                         android:rotation="40"
-                        app:srcCompat="@drawable/icon_gas_station" />
+                        app:srcCompat="@drawable/icon_gas_station_dark" />
 
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1"
                         android:rotation="40"
-                        app:srcCompat="@drawable/icon_gas_station" />
+                        app:srcCompat="@drawable/icon_gas_station_dark" />
 
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1"
                         android:rotation="40"
-                        app:srcCompat="@drawable/icon_gas_station" />
+                        app:srcCompat="@drawable/icon_gas_station_dark" />
 
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1"
                         android:rotation="40"
-                        app:srcCompat="@drawable/icon_gas_station" />
+                        app:srcCompat="@drawable/icon_gas_station_dark" />
 
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1"
                         android:rotation="40"
-                        app:srcCompat="@drawable/icon_gas_station" />
+                        app:srcCompat="@drawable/icon_gas_station_dark" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -119,35 +119,35 @@
                         android:layout_height="0dp"
                         android:layout_weight="1"
                         android:rotation="40"
-                        app:srcCompat="@drawable/icon_gas_station" />
+                        app:srcCompat="@drawable/icon_gas_station_dark" />
 
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1"
                         android:rotation="40"
-                        app:srcCompat="@drawable/icon_gas_station" />
+                        app:srcCompat="@drawable/icon_gas_station_dark" />
 
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1"
                         android:rotation="40"
-                        app:srcCompat="@drawable/icon_gas_station" />
+                        app:srcCompat="@drawable/icon_gas_station_dark" />
 
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1"
                         android:rotation="40"
-                        app:srcCompat="@drawable/icon_gas_station" />
+                        app:srcCompat="@drawable/icon_gas_station_dark" />
 
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1"
                         android:rotation="40"
-                        app:srcCompat="@drawable/icon_gas_station" />
+                        app:srcCompat="@drawable/icon_gas_station_dark" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -161,35 +161,35 @@
                         android:layout_height="0dp"
                         android:layout_weight="1"
                         android:rotation="40"
-                        app:srcCompat="@drawable/icon_gas_station" />
+                        app:srcCompat="@drawable/icon_gas_station_dark" />
 
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1"
                         android:rotation="40"
-                        app:srcCompat="@drawable/icon_gas_station" />
+                        app:srcCompat="@drawable/icon_gas_station_dark" />
 
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1"
                         android:rotation="40"
-                        app:srcCompat="@drawable/icon_gas_station" />
+                        app:srcCompat="@drawable/icon_gas_station_dark" />
 
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1"
                         android:rotation="40"
-                        app:srcCompat="@drawable/icon_gas_station" />
+                        app:srcCompat="@drawable/icon_gas_station_dark" />
 
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1"
                         android:rotation="40"
-                        app:srcCompat="@drawable/icon_gas_station" />
+                        app:srcCompat="@drawable/icon_gas_station_dark" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -203,35 +203,35 @@
                         android:layout_height="0dp"
                         android:layout_weight="1"
                         android:rotation="40"
-                        app:srcCompat="@drawable/icon_gas_station" />
+                        app:srcCompat="@drawable/icon_gas_station_dark" />
 
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1"
                         android:rotation="40"
-                        app:srcCompat="@drawable/icon_gas_station" />
+                        app:srcCompat="@drawable/icon_gas_station_dark" />
 
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1"
                         android:rotation="40"
-                        app:srcCompat="@drawable/icon_gas_station" />
+                        app:srcCompat="@drawable/icon_gas_station_dark" />
 
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1"
                         android:rotation="40"
-                        app:srcCompat="@drawable/icon_gas_station" />
+                        app:srcCompat="@drawable/icon_gas_station_dark" />
 
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1"
                         android:rotation="40"
-                        app:srcCompat="@drawable/icon_gas_station" />
+                        app:srcCompat="@drawable/icon_gas_station_dark" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -245,35 +245,35 @@
                         android:layout_height="0dp"
                         android:layout_weight="1"
                         android:rotation="40"
-                        app:srcCompat="@drawable/icon_gas_station" />
+                        app:srcCompat="@drawable/icon_gas_station_dark" />
 
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1"
                         android:rotation="40"
-                        app:srcCompat="@drawable/icon_gas_station" />
+                        app:srcCompat="@drawable/icon_gas_station_dark" />
 
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1"
                         android:rotation="40"
-                        app:srcCompat="@drawable/icon_gas_station" />
+                        app:srcCompat="@drawable/icon_gas_station_dark" />
 
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1"
                         android:rotation="40"
-                        app:srcCompat="@drawable/icon_gas_station" />
+                        app:srcCompat="@drawable/icon_gas_station_dark" />
 
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1"
                         android:rotation="40"
-                        app:srcCompat="@drawable/icon_gas_station" />
+                        app:srcCompat="@drawable/icon_gas_station_dark" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -287,35 +287,35 @@
                         android:layout_height="0dp"
                         android:layout_weight="1"
                         android:rotation="40"
-                        app:srcCompat="@drawable/icon_gas_station" />
+                        app:srcCompat="@drawable/icon_gas_station_dark" />
 
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1"
                         android:rotation="40"
-                        app:srcCompat="@drawable/icon_gas_station" />
+                        app:srcCompat="@drawable/icon_gas_station_dark" />
 
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1"
                         android:rotation="40"
-                        app:srcCompat="@drawable/icon_gas_station" />
+                        app:srcCompat="@drawable/icon_gas_station_dark" />
 
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1"
                         android:rotation="40"
-                        app:srcCompat="@drawable/icon_gas_station" />
+                        app:srcCompat="@drawable/icon_gas_station_dark" />
 
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1"
                         android:rotation="40"
-                        app:srcCompat="@drawable/icon_gas_station" />
+                        app:srcCompat="@drawable/icon_gas_station_dark" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -329,35 +329,35 @@
                         android:layout_height="0dp"
                         android:layout_weight="1"
                         android:rotation="40"
-                        app:srcCompat="@drawable/icon_gas_station" />
+                        app:srcCompat="@drawable/icon_gas_station_dark" />
 
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1"
                         android:rotation="40"
-                        app:srcCompat="@drawable/icon_gas_station" />
+                        app:srcCompat="@drawable/icon_gas_station_dark" />
 
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1"
                         android:rotation="40"
-                        app:srcCompat="@drawable/icon_gas_station" />
+                        app:srcCompat="@drawable/icon_gas_station_dark" />
 
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1"
                         android:rotation="40"
-                        app:srcCompat="@drawable/icon_gas_station" />
+                        app:srcCompat="@drawable/icon_gas_station_dark" />
 
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1"
                         android:rotation="40"
-                        app:srcCompat="@drawable/icon_gas_station" />
+                        app:srcCompat="@drawable/icon_gas_station_dark" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -371,41 +371,40 @@
                         android:layout_height="0dp"
                         android:layout_weight="1"
                         android:rotation="40"
-                        app:srcCompat="@drawable/icon_gas_station" />
+                        app:srcCompat="@drawable/icon_gas_station_dark" />
 
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1"
                         android:rotation="40"
-                        app:srcCompat="@drawable/icon_gas_station" />
+                        app:srcCompat="@drawable/icon_gas_station_dark" />
 
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1"
                         android:rotation="40"
-                        app:srcCompat="@drawable/icon_gas_station" />
+                        app:srcCompat="@drawable/icon_gas_station_dark" />
 
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1"
                         android:rotation="40"
-                        app:srcCompat="@drawable/icon_gas_station" />
+                        app:srcCompat="@drawable/icon_gas_station_dark" />
 
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1"
                         android:rotation="40"
-                        app:srcCompat="@drawable/icon_gas_station" />
+                        app:srcCompat="@drawable/icon_gas_station_dark" />
                 </LinearLayout>
 
             </LinearLayout>
 
             <ImageView
-                android:id="@+id/imageView"
                 android:layout_width="@dimen/img_normal_size"
                 android:layout_height="@dimen/img_normal_size"
                 android:layout_gravity="center"
@@ -728,7 +727,6 @@
                         android:orientation="horizontal"></LinearLayout>
 
                     <TextView
-                        android:id="@+id/textView"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="16dp"
@@ -748,7 +746,6 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/textView4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="12dp"
@@ -800,7 +797,6 @@
             app:srcCompat="@drawable/ic_star" />
 
         <TextView
-            android:id="@+id/textView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"

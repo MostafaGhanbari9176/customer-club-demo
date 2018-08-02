@@ -9,50 +9,54 @@
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="2dp"
-        android:layout_marginEnd="4dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="2dp"
-        app:cardCornerRadius="8dp">
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        app:cardCornerRadius="4dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/txtSubjectItemNews"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="16dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
-                android:textColor="@color/secondaryColor" />
-
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:layout_marginTop="16dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="8dp"
+                android:gravity="end"
                 android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/txtDateItemNews"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="16dp"
-                    android:layout_marginStart="16dp"
-                    android:text="1397-04-04"
-                    android:textColor="@color/secondaryColor" />
 
                 <TextView
                     android:id="@+id/txtHourseItemNews"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="16dp"
+                    android:layout_marginEnd="8dp"
                     android:text="12:30"
-                    android:textColor="@color/secondaryColor" />
+                    android:textColor="@color/secondaryColor"
+                    android:textSize="@dimen/txt_small_size" />
+
+                <TextView
+                    android:id="@+id/txtDateItemNews"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:text="1397-04-04"
+                    android:textColor="@color/secondaryColor"
+                    android:textSize="@dimen/txt_small_size" />
+
             </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtSubjectItemNews"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:textColor="@color/secondaryColor" />
 
             <LinearLayout
                 android:id="@+id/LLimgNews"
@@ -78,6 +82,7 @@
                 android:layout_marginTop="16dp"
                 android:gravity="start"
                 android:textColor="@color/light_three" />
+
         </LinearLayout>
     </android.support.v7.widget.CardView>
 </LinearLayout>

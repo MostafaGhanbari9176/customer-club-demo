@@ -37,8 +37,7 @@ public class PresentCar implements Car.OnCarResponseListener {
     @Override
     public void onReceiveFlag(ArrayList<RFServer> res) {
         if (res == null || res.size() == 0)
-            return;
-        onPresentCarResponseListener.flagFromCar(res.get(0).code == 1);
+            onPresentCarResponseListener.flagFromCar(true);
     }
 
     @Override

@@ -17,7 +17,6 @@
         android:nestedScrollingEnabled="true">
 
         <android.support.v4.widget.NestedScrollView
-            android:id="@+id/NSVDialogAboutClub"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="32dp">
@@ -28,7 +27,6 @@
                 android:orientation="vertical">
 
                 <EditText
-                    android:id="@+id/txtDialogAboutClub"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="150"
@@ -50,7 +48,6 @@
             android:orientation="horizontal"></LinearLayout>
 
         <TextView
-            android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"

@@ -67,7 +67,7 @@ public class AdapterTicketMessage extends RecyclerView.Adapter<AdapterTicketMess
         holder.txtAnswerDate.setText(item.answerDate);
         holder.txtQuestionDate.setText(item.qustionDate);
 
-        lastPosition = G.setListItemsAnimation(null, new View[]{holder.txtAnswer, holder.txtQuestion}, position, lastPosition);
+        lastPosition = G.setListItemsAnimation(new View[]{holder.txtAnswer, holder.txtQuestion}, null, position, lastPosition);
 
     }
 

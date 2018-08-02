@@ -1,11 +1,13 @@
 package ir.mahoorsoft.app.stationsfanclub.view.activity_station_feature;
 
+import android.os.Build;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.TextView;
 
 import ir.mahoorsoft.app.stationsfanclub.G;
 import ir.mahoorsoft.app.stationsfanclub.R;
@@ -18,6 +20,7 @@ public class ActivityStationFeature extends AppCompatActivity {
     Toolbar toolbar;
     ViewPager viewPager;
     TabLayout tabLayout;
+    TextView txtAction;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,6 +34,8 @@ public class ActivityStationFeature extends AppCompatActivity {
         pointers();
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        txtAction.setText(R.string.app_name);
+        getSupportActionBar().setTitle("");
         tabLayout.setupWithViewPager(viewPager);
         settingUpViewPager();
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
@@ -43,6 +48,7 @@ public class ActivityStationFeature extends AppCompatActivity {
     }
 
     private void pointers() {
+        txtAction = (TextView) findViewById(R.id.txtActionBarStation);
         toolbar = (Toolbar) findViewById(R.id.tlbStationFeature);
         tabLayout = (TabLayout) findViewById(R.id.tabLayoutStationFeature);
         viewPager = (ViewPager) findViewById(R.id.VPStationFeature);

@@ -31,7 +31,7 @@ public class Comment {
         ArrayList<StComment> stComments = new ArrayList<>();
         for (int i = 0; i < 10; i++) {
             StComment stComment = new StComment();
-            stComment.comText = "testText" + i;
+            stComment.comText = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافی." + i;
             stComment.comDate = "1379-04-0" + i;
             stComment.cuName = "Mostafa" + i;
             stComment.rat = i;

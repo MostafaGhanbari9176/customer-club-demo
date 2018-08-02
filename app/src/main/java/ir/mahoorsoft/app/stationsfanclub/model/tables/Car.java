@@ -28,7 +28,7 @@ public class Car {
     }
 
     public void checkPelakValidation(String pelak){
-        Api api = ApiClient.getClient().create(Api.class);
+/*        Api api = ApiClient.getClient().create(Api.class);
         Call<ArrayList<RFServer>> validation = api.pelakValidation(pelak);
         validation.enqueue(new Callback<ArrayList<RFServer>>() {
             @Override
@@ -40,7 +40,8 @@ public class Car {
             public void onFailure(Call<ArrayList<RFServer>> call, Throwable t) {
                 onCarResponseListener.sendMessage(t.getMessage());
             }
-        });
+        });*/
+        onCarResponseListener.onReceiveFlag(null);
     }
 
     public void saveCustomerCarData(String pelak, String carType, String sokhtType){

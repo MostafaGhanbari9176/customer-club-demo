@@ -115,6 +115,7 @@ public class FragmentPelakValidation extends Fragment implements View.OnClickLis
     @Override
     public void flagFromCar(boolean flag) {
         pbar.setVisibility(View.GONE);
+        savePelak();
     }
 
     @Override
