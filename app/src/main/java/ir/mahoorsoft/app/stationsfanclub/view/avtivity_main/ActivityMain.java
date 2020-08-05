@@ -20,6 +20,8 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.google.firebase.messaging.FirebaseMessaging;
+
 import ir.mahoorsoft.app.stationsfanclub.G;
 import ir.mahoorsoft.app.stationsfanclub.R;
 import ir.mahoorsoft.app.stationsfanclub.model.preferences.Pref;
@@ -44,6 +46,10 @@ public class ActivityMain extends AppCompatActivity {
         G.activity = this;
         setContentView(R.layout.activity_main);
         init();
+
+        FirebaseMessaging.getInstance().setAutoInitEnabled(true);
+
+
     }
 
     @Override
@@ -73,7 +79,7 @@ public class ActivityMain extends AppCompatActivity {
         pointers();
         setSupportActionBar(toolbar);
         setUpNavigationItemListener();
-        G.disableShiftModeNavigation(navigationView);
+       // G.disableShiftModeNavigation(navigationView);
         replaceView(new FragmentHome());
         txtActionBar.setText("خانه");
     }

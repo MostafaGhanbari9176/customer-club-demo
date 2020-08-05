@@ -32,7 +32,7 @@ public class Customer {
 
     public void saveCustomer(String name, String family, String phone) {
 
-        Api api = ApiClient.getClient().create(Api.class);
+/*        Api api = ApiClient.getClient().create(Api.class);
         Call<ArrayList<RFServer>> savCar = api.saveCustomerSelfData(name, family, phone);
         savCar.enqueue(new Callback<ArrayList<RFServer>>() {
             @Override
@@ -44,6 +44,7 @@ public class Customer {
             public void onFailure(Call<ArrayList<RFServer>> call, Throwable t) {
                 onCustomerResponseListener.sendMessage(t.getMessage());
             }
-        });
+        });*/
+        onCustomerResponseListener.onReceiveFlag(null);
     }
 }

@@ -32,9 +32,9 @@ public class PresentCustomer implements Customer.OnCustomerResponseListener {
 
     @Override
     public void onReceiveFlag(ArrayList<RFServer> res) {
-        if (res == null || res.size() == 0)
-            return;
-        onPresentCustomerListener.flagFromCustomer(res.get(0).code == 1);
+/*        if (res == null || res.size() == 0)
+            return;*/
+        onPresentCustomerListener.flagFromCustomer(true);
     }
 
     @Override

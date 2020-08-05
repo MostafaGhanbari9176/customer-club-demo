@@ -199,7 +199,7 @@ public class FragmentGetCustomerData extends Fragment implements View.OnClickLis
     @Override
     public void messageFromCustomer(String message) {
         pbar.setVisibility(View.GONE);
-        saveCustomerData();
+
         Toast.makeText(G.context, message, Toast.LENGTH_SHORT).show();
     }
 
@@ -217,6 +217,7 @@ public class FragmentGetCustomerData extends Fragment implements View.OnClickLis
     @Override
     public void flagFromCustomer(boolean flag) {
         pbar.setVisibility(View.GONE);
+        saveCustomerData();
     }
 
     @Override

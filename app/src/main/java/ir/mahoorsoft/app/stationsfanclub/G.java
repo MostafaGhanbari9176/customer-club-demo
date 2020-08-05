@@ -40,7 +40,7 @@ public class G extends Application {
         preferences = context.getSharedPreferences(Name, MODE_PRIVATE);
     }
 
-    public static void disableShiftModeNavigation(BottomNavigationView view) {
+    /*public static void disableShiftModeNavigation(BottomNavigationView view) {
         BottomNavigationMenuView menuView = (BottomNavigationMenuView) view.getChildAt(0);
         try {
             Field shiftingMode = menuView.getClass().getDeclaredField("mShiftingMode");
@@ -50,7 +50,7 @@ public class G extends Application {
             for (int i = 0; i < menuView.getChildCount(); i++) {
                 BottomNavigationItemView item = (BottomNavigationItemView) menuView.getChildAt(i);
                 //noinspection RestrictedApi
-                item.setShiftingMode(false);
+                item.setShifting(false);
                 // set once again checked value, so view will be updated
                 //noinspection RestrictedApi
                 item.setChecked(item.getItemData().isChecked());
@@ -60,7 +60,7 @@ public class G extends Application {
         } catch (IllegalAccessException e) {
             Log.e("BNVHelper", "Unable to change value of shift mode", e);
         }
-    }
+    }*/
 
     public static void animatingForGone(final View view, float firstAlpha, float lastAlpha, float translationYValue) {
         view.setAlpha(firstAlpha);

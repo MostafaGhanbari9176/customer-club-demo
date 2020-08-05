@@ -45,20 +45,21 @@ public class Car {
     }
 
     public void saveCustomerCarData(String pelak, String carType, String sokhtType){
-
+/*
         Api api = ApiClient.getClient().create(Api.class);
         Call<ArrayList<RFServer>> savCar = api.saveCustomerCarData(pelak, carType, sokhtType);
         savCar.enqueue(new Callback<ArrayList<RFServer>>() {
             @Override
             public void onResponse(Call<ArrayList<RFServer>> call, Response<ArrayList<RFServer>> response) {
-                onCarResponseListener.onReceiveFlag(response.body());
+                onCarResponseListener.onReceiveFlag(null);
             }
 
             @Override
             public void onFailure(Call<ArrayList<RFServer>> call, Throwable t) {
-                onCarResponseListener.sendMessage(t.getMessage());
+
             }
-        });
+        });*/
+        onCarResponseListener.onReceiveFlag(null);
     }
 
 
