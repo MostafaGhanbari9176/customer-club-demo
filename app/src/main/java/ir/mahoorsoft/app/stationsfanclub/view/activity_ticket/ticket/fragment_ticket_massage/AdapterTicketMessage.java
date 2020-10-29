@@ -1,12 +1,13 @@
 package ir.mahoorsoft.app.stationsfanclub.view.activity_ticket.ticket.fragment_ticket_massage;
 
 import android.content.Context;
-import android.support.v7.widget.RecyclerView;
 import android.util.DisplayMetrics;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 

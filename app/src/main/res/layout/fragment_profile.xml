@@ -6,7 +6,7 @@
     android:background="@color/light_one"
     android:layoutDirection="rtl">
 
-    <android.support.design.widget.AppBarLayout
+    <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appbarFragmentProfile"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -411,9 +411,9 @@
                 app:srcCompat="@drawable/icon_account" />
 
         </android.support.design.widget.CollapsingToolbarLayout>
-    </android.support.design.widget.AppBarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
 
-    <android.support.v4.widget.NestedScrollView
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="106dp"
@@ -772,7 +772,7 @@
                 android:textColor="@color/secondaryDarkColor"
                 android:visibility="gone" />
 
-            <android.support.v7.widget.RecyclerView
+            <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/RVLotteryFrafmentProfile"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -781,7 +781,7 @@
                 android:paddingTop="16dp" />
 
         </LinearLayout>
-    </android.support.v4.widget.NestedScrollView>
+    </androidx.core.widget.NestedScrollView>
 
     <RelativeLayout
         android:layout_width="80dp"

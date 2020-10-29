@@ -1,21 +1,21 @@
 package ir.mahoorsoft.app.stationsfanclub.view.activity_ticket;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.fragment.app.Fragment;
+
 import ir.mahoorsoft.app.stationsfanclub.G;
 import ir.mahoorsoft.app.stationsfanclub.R;
 import ir.mahoorsoft.app.stationsfanclub.view.activity_ticket.motedavel.FragmentMotedavelTicketList;
 import ir.mahoorsoft.app.stationsfanclub.view.activity_ticket.ticket.fragment_ticket_list.FragmentTicketList;
-import ir.mahoorsoft.app.stationsfanclub.view.avtivity_main.profile.FragmentProfile;
 
 /**
  * Created by M-gh on 01-Aug-18.

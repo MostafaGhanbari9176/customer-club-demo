@@ -2,15 +2,16 @@ package ir.mahoorsoft.app.stationsfanclub.view.avtivity_main.home;
 
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.util.DisplayMetrics;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
+
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
@@ -91,7 +92,7 @@ public class FragmentHome extends Fragment implements PresentNews.OnPresentNewsL
     @Override
     public void dataFromNews(ArrayList<StNews> newses) {
         AdapterNewsList adapterLotteryList = new AdapterNewsList(G.context, newses);
-        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(G.context, LinearLayout.VERTICAL, false);
+        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(G.context, RecyclerView.VERTICAL, false);
         list.setLayoutManager(layoutManager);
         list.setAdapter(adapterLotteryList);
         adapterLotteryList.notifyDataSetChanged();
@@ -113,7 +114,7 @@ public class FragmentHome extends Fragment implements PresentNews.OnPresentNewsL
     public void dataFromTablighat(ArrayList<StTablighat> tablighats) {
         pageViews = new ArrayList<>();
         for (int i = 0; i < tablighats.size(); i++) {
-            pageViews.add(new Page(tablighats.get(i).img+"", "https://static2.borna.news/thumbnail/5KMtLPIam7ls/zKlnR2CgDMts54GkxMYEj8fvMMUiCETIT3Il7Z8QJ7YCZYBL8OGb1tkXRmfG0ZrOzG4dCpLzLSmmrKvCe4wUTpsw1L7Dn2vC/20795.jpg", this));
+            pageViews.add(new Page(tablighats.get(i).img+"", "https://admin.tala.ir/content/blog/74524/32075389.jpg", this));
         }
         settingUpVPager();
     }

@@ -6,12 +6,12 @@
     android:fitsSystemWindows="true"
     android:layoutDirection="rtl"
     android:orientation="vertical">
-    <android.support.design.widget.AppBarLayout
+    <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar">
 
-        <android.support.v7.widget.Toolbar
+        <androidx.appcompat.widget.Toolbar
             android:id="@+id/tlbMain"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" >
@@ -38,9 +38,9 @@
                     android:textColor="@color/light_one"
                     android:textSize="@dimen/txt_big_size" />
             </LinearLayout>
-        </android.support.v7.widget.Toolbar>
+        </androidx.appcompat.widget.Toolbar>
 
-    </android.support.design.widget.AppBarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -81,7 +81,7 @@
 
     </RelativeLayout>
 
-    <android.support.design.widget.BottomNavigationView
+    <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/BNVMain"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

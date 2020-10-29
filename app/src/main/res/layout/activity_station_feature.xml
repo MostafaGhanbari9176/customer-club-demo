@@ -6,13 +6,13 @@
     android:layoutDirection="rtl"
     android:orientation="vertical">
 
-    <android.support.design.widget.AppBarLayout
+    <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="start"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
 
-        <android.support.v7.widget.Toolbar
+        <com.google.android.material.appbar.AppBarLayout
             android:id="@+id/tlbStationFeature"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" >
@@ -25,7 +25,7 @@
                 android:textSize="@dimen/txt_big_size"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
-        </android.support.v7.widget.Toolbar>
+        </com.google.android.material.appbar.AppBarLayout>
 
         <android.support.design.widget.TabLayout
             android:id="@+id/tabLayoutStationFeature"
@@ -34,9 +34,9 @@
             android:layoutDirection="ltr"
             app:tabMode="scrollable" />
 
-    </android.support.design.widget.AppBarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
 
-    <android.support.v4.view.ViewPager
+    <androidx.core.view.ViewPager
         android:id="@+id/VPStationFeature"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />

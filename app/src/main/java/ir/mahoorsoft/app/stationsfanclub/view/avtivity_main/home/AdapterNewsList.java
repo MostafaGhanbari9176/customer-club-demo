@@ -1,8 +1,6 @@
 package ir.mahoorsoft.app.stationsfanclub.view.avtivity_main.home;
 
 import android.content.Context;
-
-import android.support.v7.widget.RecyclerView;
 import android.util.DisplayMetrics;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,6 +9,8 @@ import android.widget.ImageView;
 
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 
@@ -49,7 +49,7 @@ public class AdapterNewsList extends RecyclerView.Adapter<AdapterNewsList.Holder
         holder.txtHours.setText(stLottery.nHourse);
         holder.txtNews.setText(stLottery.nText);
         Glide.with(context)
-                .load("https://static2.borna.news/thumbnail/5KMtLPIam7ls/zKlnR2CgDMts54GkxMYEj8fvMMUiCETIT3Il7Z8QJ7YCZYBL8OGb1tkXRmfG0ZrOzG4dCpLzLSmmrKvCe4wUTpsw1L7Dn2vC/20795.jpg")
+                .load("https://admin.tala.ir/content/blog/74524/32075389.jpg")
                 .centerCrop()
                 .into(holder.img);
 

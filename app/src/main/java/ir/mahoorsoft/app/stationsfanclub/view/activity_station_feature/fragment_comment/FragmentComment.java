@@ -6,14 +6,14 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.support.v4.app.Fragment;
-import android.support.v4.content.ContextCompat;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AlertDialog;
+import androidx.core.content.ContextCompat;
+import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -23,8 +23,10 @@ import android.view.animation.TranslateAnimation;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.RatingBar;
-import android.widget.SeekBar;
 import android.widget.TextView;
+
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.snackbar.Snackbar;
 
 import java.util.ArrayList;
 
@@ -157,7 +159,7 @@ public class FragmentComment extends Fragment implements PresentComment.OnPresen
         source.clear();
         source.addAll(stComments);
         AdapterComment adapterLotteryList = new AdapterComment(G.context, stComments, this);
-        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(G.context, LinearLayout.VERTICAL, false);
+        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(G.context, RecyclerView.VERTICAL, false);
         list.setLayoutManager(layoutManager);
         list.setAdapter(adapterLotteryList);
         adapterLotteryList.notifyDataSetChanged();
@@ -182,9 +184,6 @@ public class FragmentComment extends Fragment implements PresentComment.OnPresen
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 Snackbar snackbar = Snackbar.make(view, "ازبازخورد شما متشکریم", 1000);
-                View sbView = snackbar.getView();
-                TextView textView = (TextView) sbView.findViewById(android.support.design.R.id.snackbar_text);
-                textView.setTextColor(ContextCompat.getColor(G.context, R.color.primaryLightColor));
                 snackbar.show();
             }
         });

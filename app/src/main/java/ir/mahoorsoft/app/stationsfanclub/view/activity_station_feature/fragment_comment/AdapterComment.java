@@ -1,25 +1,20 @@
 package ir.mahoorsoft.app.stationsfanclub.view.activity_station_feature.fragment_comment;
 
 import android.content.Context;
-import android.support.v7.widget.CardView;
-import android.support.v7.widget.RecyclerView;
-import android.util.DisplayMetrics;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.RatingBar;
 import android.widget.TextView;
 
-import com.bumptech.glide.Glide;
+import androidx.cardview.widget.CardView;
+import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
-
 import ir.mahoorsoft.app.stationsfanclub.G;
 import ir.mahoorsoft.app.stationsfanclub.R;
 import ir.mahoorsoft.app.stationsfanclub.model.struct.StComment;
-import ir.mahoorsoft.app.stationsfanclub.model.struct.StNews;
+
 
 /**
  * Created by M-gh on 30-Jul-18.
